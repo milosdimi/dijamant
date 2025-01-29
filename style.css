@@ -1,0 +1,308 @@
+/* Allgemeine Stile */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Dunkler, transparenter Hintergrund */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-brand img {
+  height: 50px; /* Höhe des Logos anpassen */
+}
+
+/* Navigationslinks */
+.navbar-light .navbar-nav .nav-link {
+  color: white !important; /* Textfarbe der Links */
+  font-size: 1.1rem;
+  transition: color 0.3s ease; /* Sanfter Farbübergang */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #4caf50 !important; /* Farbe beim Hover */
+}
+
+/* Telefonnummer mit Icon */
+.phone-link {
+  color: white !important; /* Textfarbe der Telefonnummer */
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease; /* Sanfter Farbübergang */
+}
+
+.phone-link:hover {
+  color: #4caf50 !important; /* Farbe beim Hover */
+}
+
+/* Hamburger-Menü-Icon */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5); /* Farbe des Hamburger-Menü-Icons */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Hero-Banner */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Volle Bildschirmhöhe */
+  background-image: url("img/background.jpg"); /* Pfad zu deinem Hintergrundbild */
+  background-size: cover; /* Bild deckt den gesamten Bereich ab */
+  background-position: center; /* Bild wird zentriert */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Overlay für bessere Lesbarkeit des Textes */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dunkles Overlay */
+}
+
+/* Inhalt des Hero-Banners */
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo im Hero-Banner */
+.hero-logo {
+  max-width: 150px; /* Größe des Logos anpassen */
+  margin-bottom: 20px;
+}
+
+/* Titel im Hero-Banner */
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeInDown 1.5s ease-in-out; /* Animation für den Titel */
+}
+
+/* Untertitel im Hero-Banner */
+.hero-subtitle {
+  font-size: 1.5rem;
+  animation: fadeInUp 1.5s ease-in-out; /* Animation für den Untertitel */
+}
+
+/* Scroll-Pfeil */
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  animation: bounce 2s infinite;
+}
+
+/* Animationen */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+/* Hauptinhalt */
+/* Über uns */
+#about {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+#about h2 {
+  color: #4caf50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Services */
+#services {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+#services h2 {
+  color: #4caf50;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #4caf50;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Special Event mit Parallax-Effekt */
+#special-event {
+  position: relative;
+  height: 600px; /* Höhe der Sektion */
+  background-image: url("img/event-background.jpg"); /* Hintergrundbild */
+  background-size: cover; /* Bild deckt den gesamten Bereich ab */
+  background-position: center; /* Bild wird zentriert */
+  background-attachment: fixed; /* Hintergrundbild bleibt fixiert */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Horizontal zentrieren */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Schatten für bessere Lesbarkeit */
+}
+
+/* Overlay für bessere Lesbarkeit des Textes */
+#special-event::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dunkles Overlay */
+}
+
+/* Inhalt der Event-Sektion */
+#special-event .container {
+  position: relative;
+  z-index: 1;
+  height: 100%; /* Container nimmt die volle Höhe ein */
+}
+
+#special-event .row {
+  height: 100%; /* Row nimmt die volle Höhe ein */
+}
+
+#special-event h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#special-event .lead {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+#special-event img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid white; /* Rahmen um das Party-Bild */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten für das Bild */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem; /* Kleinere Schriftgröße für mobile Geräte */
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem; /* Kleinere Schriftgröße für mobile Geräte */
+  }
+
+  .navbar-nav {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.9
+    ); /* Dunkler Hintergrund für mobile Navbar */
+    padding: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center; /* Zentrierte Links für mobile Geräte */
+  }
+}
