@@ -21,6 +21,7 @@ header {
 /* Logo */
 .navbar-brand img {
   height: 50px; /* Höhe des Logos anpassen */
+  filter: invert(1);
 }
 
 /* Navigationslinks */
@@ -90,6 +91,7 @@ header {
 .hero-logo {
   max-width: 150px; /* Größe des Logos anpassen */
   margin-bottom: 20px;
+  filter: invert(1);
 }
 
 /* Titel im Hero-Banner */
