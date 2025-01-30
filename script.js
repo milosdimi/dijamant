@@ -1,3 +1,23 @@
+// Mailer
+function sendMail(event) {
+  event.preventDefault();
+  const data = new FormData(event.target);
+
+  fetch("https://formspree.io/f/mzzdgdpg", {
+    method: "POST",
+    body: new FormData(event.target),
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then(() => {
+      window.location.href = "./send_mail.html";
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
