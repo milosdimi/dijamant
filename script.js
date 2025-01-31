@@ -1,11 +1,10 @@
-// Mailer
 function sendMail(event) {
   event.preventDefault();
   const data = new FormData(event.target);
 
-  fetch("https://formspree.io/f/moqgerva", {
+  fetch("https://formspree.io/f/mzzdgdpg", {
     method: "POST",
-    body: new FormData(event.target),
+    body: data, // Nutze die definierte "data"-Variable
     headers: {
       Accept: "application/json",
     },
@@ -14,7 +13,7 @@ function sendMail(event) {
       window.location.href = "./send_mail.html";
     })
     .catch((error) => {
-      console.log(error);
+      console.error("Fehler beim Senden:", error);
     });
 }
 
