@@ -127,6 +127,10 @@ header {
   color: white;
   animation: bounce 2s infinite;
 }
+.bg-dark-transparent {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
 
 /* Animationen */
 @keyframes fadeInDown {
