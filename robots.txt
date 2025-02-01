@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /favicon/
+Disallow: /img/
+Disallow: /send_mail.html
+
+Sitemap: https://www.caffe-dijamant.com/sitemap.xml
