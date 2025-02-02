@@ -1,0 +1,364 @@
+<!-- Services -->
+<section id="services" class="py-5">
+  <div class="container">
+    <h2>Pored nasih usluga izdvajamo</h2>
+    <div class="row">
+      <!-- Karte 1: Kaffee-Spezialitäten -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img
+            src="img/coffee.jpg"
+            class="card-img-top"
+            alt="Najbolja kafa u Krusevcu - Dijamant Caffè"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kafa specijaliteti</h5>
+            <p class="card-text">
+              Otkrijte naše ručno pripremljene specijalitete od kafe,
+              napravljene s ljubavlju i pažnjom.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karte 2: Frische Desserts -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img
+            src="img/desserts.jpg"
+            class="card-img-top"
+            alt="Ukusni deserti u Dijamant Caffè"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Sveži deserti</h5>
+            <p class="card-text">
+              Uživajte u našim domaćim desertima, koji se svakodnevno sveže
+              pripremaju.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karte 3: Gemütliche Atmosphäre -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img
+            src="img/atmosphere.jpg"
+            class="card-img-top"
+            alt="Restoran sa prijatnom atmosferom u Krusevcu"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Prijatna atmosfera</h5>
+            <p class="card-text">
+              Prepustite se čarima naše tople i prijatne atmosfere.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Karte 4:Restoran -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img
+            src="img/restoran.jpg"
+            class="card-img-top"
+            alt="Najbolji Restoran u Krusevcu"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Restoran</h5>
+            <p class="card-text">
+              Uživajte u vrhunskim jelima pripremljenim od svežih sastojaka u
+              prijatnoj i toploj atmosferi. Naš restoran je mesto gde se ukusi
+              spajaju sa tradicijom i ljubavlju prema hrani.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Karte 5:Igraonica -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img
+            src="img/igraonica.jpg"
+            class="card-img-top"
+            alt="Najbolja Igraonica u Krusevcu"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Igraonica</h5>
+            <p class="card-text">
+              Naša prostrana igraonica pruža bezbedno i zabavno okruženje za
+              najmlađe. Dok vi uživate u obroku, vaša deca mogu istraživati,
+              igrati se i zabavljati u našem posebno dizajniranom prostoru za
+              igru.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Karte 6: Terassa -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img
+            src="img/terasa.jpg"
+            class="card-img-top"
+            alt="Najlepsa Terasa Krusevac"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Terasa</h5>
+            <p class="card-text">
+              Opustite se na našoj prelepoj terasi i uživajte u prijatnoj
+              atmosferi na otvorenom. Bilo da pijete jutarnju kafu ili uživate u
+              večernjem zalasku sunca, naša terasa je savršeno mesto za svaki
+              trenutak.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Modal 1: Kafa -->
+    <div class="modal fade" id="modalKafa" tabindex="-1" aria-labelledby="modalKafaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalKafaLabel">
+              Kafa specijaliteti
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Bootstrap-Carousel mit Fade-Effekt & Auto-Sliding -->
+            <div id="modalKafaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+              data-bs-interval="3000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/modalcaffe.png" class="d-block w-100 rounded" alt="Kafa 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/modaldessert.jpg" class="d-block w-100 rounded" alt="Kafa 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/modalrestorant.jpg" class="d-block w-100 rounded" alt="Kafa 3" />
+                </div>
+              </div>
+
+              <!-- Steuerungspfeile -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#modalKafaCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#modalKafaCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+            <!-- Thumbnail Vorschau für modalKafa -->
+            <div class="row mt-3">
+              <div class="col-4">
+                <img src="img/modalcaffe.png" class="img-thumbnail" onclick="jumpToSlide('modalKafaCarousel', 0)"
+                  alt="Thumbnail 1" />
+              </div>
+              <div class="col-4">
+                <img src="img/modaldessert.jpg" class="img-thumbnail" onclick="jumpToSlide('modalKafaCarousel', 1)"
+                  alt="Thumbnail 2" />
+              </div>
+              <div class="col-4">
+                <img src="img/modalrestorant.jpg" class="img-thumbnail" onclick="jumpToSlide('modalKafaCarousel', 2)"
+                  alt="Thumbnail 3" />
+              </div>
+            </div>
+
+            <p class="mt-3 text-center">
+              Otkrijte našu široku ponudu specijalnih kafa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Dessert -->
+    <div class="modal fade" id="modalDeserti" tabindex="-1" aria-labelledby="modalDesertiLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalDesertiLabel">Sveži deserti</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Bootstrap-Carousel mit Fade-Effekt & Auto-Sliding -->
+            <div id="modalDesertiCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+              data-bs-interval="3000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/modalcaffe.png" class="d-block w-100 rounded" alt="Desert 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/modaldessert.jpg" class="d-block w-100 rounded" alt="Desert 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/modalrestorant.jpg" class="d-block w-100 rounded" alt="Desert 3" />
+                </div>
+              </div>
+
+              <!-- Steuerungspfeile (FEHLER BEHOBEN!) -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#modalDesertiCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#modalDesertiCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <!-- Thumbnail Vorschau (JavaScript FIX!) -->
+            <div class="row mt-3">
+              <div class="col-4">
+                <img src="img/modalcaffe.png" class="img-thumbnail" onclick="jumpToSlide('modalDesertiCarousel', 0)"
+                  alt="Thumbnail 1" />
+              </div>
+              <div class="col-4">
+                <img src="img/modaldessert.jpg" class="img-thumbnail" onclick="jumpToSlide('modalDesertiCarousel', 1)"
+                  alt="Thumbnail 2" />
+              </div>
+              <div class="col-4">
+                <img src="img/modalrestorant.jpg" class="img-thumbnail" onclick="jumpToSlide('modalDesertiCarousel', 2)"
+                  alt="Thumbnail 3" />
+              </div>
+            </div>
+
+            <p class="mt-3 text-center">
+              Naši deserti su ručno pravljeni svaki dan od najkvalitetnijih
+              sastojaka.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: Prijatna atmosfera -->
+    <div class="modal fade" id="modalAtmosfera" tabindex="-1" aria-labelledby="modalAtmosferaLabel" aria-hidden="true"
+      data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAtmosferaLabel">Prijatna atmosfera</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- Bootstrap-Carousel mit KORREKTER ID -->
+            <div id="modalAtmosferaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+              data-bs-interval="3000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/modalcaffe.png" class="d-block w-100 rounded" alt="Atmosfera 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/modaldessert.jpg" class="d-block w-100 rounded" alt="Atmosfera 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/modalrestorant.jpg" class="d-block w-100 rounded" alt="Atmosfera 3">
+                </div>
+              </div>
+
+              <!-- Steuerungspfeile -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#modalAtmosferaCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#modalAtmosferaCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <!-- Thumbnail Vorschau -->
+            <div class="row mt-3">
+              <div class="col-4">
+                <img src="img/modalcaffe.png" class="img-thumbnail" onclick="jumpToSlide('modalAtmosferaCarousel', 0)"
+                  alt="Thumbnail 1">
+              </div>
+              <div class="col-4">
+                <img src="img/modaldessert.jpg" class="img-thumbnail" onclick="jumpToSlide('modalAtmosferaCarousel', 1)"
+                  alt="Thumbnail 2">
+              </div>
+              <div class="col-4">
+                <img src="img/modalrestorant.jpg" class="img-thumbnail"
+                  onclick="jumpToSlide('modalAtmosferaCarousel', 2)" alt="Thumbnail 3">
+              </div>
+            </div>
+
+            <p class="mt-3 text-center">
+              Uživajte u savršenoj atmosferi našeg restorana.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: Vrhunska Kuhinja -->
+    <div class="modal fade" id="modalKuhinja" tabindex="-1" aria-labelledby="modalKuhinjaLabel" aria-hidden="true"
+      data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalKuhinjaLabel">Vrhunska Kuhinja</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- Bootstrap-Carousel mit Fade-Effekt -->
+            <div id="modalKuhinjaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+              data-bs-interval="3000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/modalrestorant.jpg" class="d-block w-100 rounded" alt="Kuhinja 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/modalcaffe.png" class="d-block w-100 rounded" alt="Kuhinja 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/modaldessert.jpg" class="d-block w-100 rounded" alt="Kuhinja 3">
+                </div>
+              </div>
+
+              <!-- Steuerungspfeile -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#modalKuhinjaCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#modalKuhinjaCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <!-- Thumbnail Vorschau -->
+            <div class="row mt-3">
+              <div class="col-4">
+                <img src="img/modalrestorant.jpg" class="img-thumbnail" onclick="jumpToSlide('modalKuhinjaCarousel', 0)"
+                  alt="Thumbnail 1">
+              </div>
+              <div class="col-4">
+                <img src="img/modalcaffe.png" class="img-thumbnail" onclick="jumpToSlide('modalKuhinjaCarousel', 1)"
+                  alt="Thumbnail 2">
+              </div>
+              <div class="col-4">
+                <img src="img/modaldessert.jpg" class="img-thumbnail" onclick="jumpToSlide('modalKuhinjaCarousel', 2)"
+                  alt="Thumbnail 3">
+              </div>
+            </div>
+
+            <p class="mt-3 text-center">
+              Uživajte u vrhunskoj gastronomiji našeg restorana – svaki zalogaj je pravo uživanje!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>

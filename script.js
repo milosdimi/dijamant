@@ -77,3 +77,14 @@ document.addEventListener("DOMContentLoaded", function () {
     cookieBanner.classList.remove("show");
   });
 });
+
+// modal
+function jumpToSlide(carouselId, slideIndex) {
+  var carousel = document.querySelector("#" + carouselId);
+  if (!carousel) {
+    console.error("Fehler: Carousel mit ID '" + carouselId + "' nicht gefunden.");
+    return;
+  }
+  var bsCarousel = new bootstrap.Carousel(carousel);
+  bsCarousel.to(slideIndex);
+}

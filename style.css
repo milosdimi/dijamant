@@ -7,13 +7,16 @@ body {
   color: #333;
   line-height: 1.6;
 }
+
 .body-content {
-  padding-top: 110px; /* Höhe des Headers + etwas extra Abstand */
+  padding-top: 110px;
+  /* Höhe des Headers + etwas extra Abstand */
 }
 
 /* Header */
 header {
-  background-color: rgba(0, 0, 0, 0.7); /* Dunkler, transparenter Hintergrund */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Dunkler, transparenter Hintergrund */
   padding: 10px 0;
   position: fixed;
   top: 0;
@@ -24,40 +27,53 @@ header {
 
 /* Logo */
 .navbar-brand img {
-  height: 50px; /* Höhe beibehalten */
-  max-height: 100%; /* Damit das Bild nicht zu groß wird */
-  width: auto; /* Automatische Breite */
-  object-fit: contain; /* Sorgt dafür, dass das Logo nicht verzerrt wird */
-  transform: scale(2.3); /* Logo um 30% vergrößern */
-  padding-left: 24px; /* Abstand vom linken Rand */
+  height: 50px;
+  /* Höhe beibehalten */
+  max-height: 100%;
+  /* Damit das Bild nicht zu groß wird */
+  width: auto;
+  /* Automatische Breite */
+  object-fit: contain;
+  /* Sorgt dafür, dass das Logo nicht verzerrt wird */
+  transform: scale(2.3);
+  /* Logo um 30% vergrößern */
+  padding-left: 24px;
+  /* Abstand vom linken Rand */
 }
 
 /* Navigationslinks */
 .navbar-light .navbar-nav .nav-link {
-  color: white !important; /* Textfarbe der Links */
+  color: white !important;
+  /* Textfarbe der Links */
   font-size: 1.1rem;
-  transition: color 0.3s ease; /* Sanfter Farbübergang */
+  transition: color 0.3s ease;
+  /* Sanfter Farbübergang */
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #a29074 !important; /* Farbe beim Hover */
+  color: #a29074 !important;
+  /* Farbe beim Hover */
 }
 
 /* Telefonnummer mit Icon */
 .phone-link {
-  color: white !important; /* Textfarbe der Telefonnummer */
+  color: white !important;
+  /* Textfarbe der Telefonnummer */
   text-decoration: none;
   font-size: 1.1rem;
-  transition: color 0.3s ease; /* Sanfter Farbübergang */
+  transition: color 0.3s ease;
+  /* Sanfter Farbübergang */
 }
 
 .phone-link:hover {
-  color: #a29074 !important; /* Farbe beim Hover */
+  color: #a29074 !important;
+  /* Farbe beim Hover */
 }
 
 /* Hamburger-Menü-Icon */
 .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.5); /* Farbe des Hamburger-Menü-Icons */
+  border-color: rgba(255, 255, 255, 0.5);
+  /* Farbe des Hamburger-Menü-Icons */
 }
 
 .navbar-toggler-icon {
@@ -67,10 +83,14 @@ header {
 /* Hero-Banner */
 .hero-section {
   position: relative;
-  height: 100vh; /* Volle Bildschirmhöhe */
-  background-image: url("img/background.jpg"); /* Pfad zu deinem Hintergrundbild */
-  background-size: cover; /* Bild deckt den gesamten Bereich ab */
-  background-position: center; /* Bild wird zentriert */
+  height: 100vh;
+  /* Volle Bildschirmhöhe */
+  background-image: url("img/background.jpg");
+  /* Pfad zu deinem Hintergrundbild */
+  background-size: cover;
+  /* Bild deckt den gesamten Bereich ab */
+  background-position: center;
+  /* Bild wird zentriert */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +106,8 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dunkles Overlay */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dunkles Overlay */
 }
 
 /* Inhalt des Hero-Banners */
@@ -97,7 +118,8 @@ header {
 
 /* Logo im Hero-Banner */
 .hero-logo {
-  max-width: 150px; /* Größe des Logos anpassen */
+  max-width: 150px;
+  /* Größe des Logos anpassen */
   margin-bottom: 20px;
   filter: invert(1);
 }
@@ -107,14 +129,16 @@ header {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  animation: fadeInDown 1.5s ease-in-out; /* Animation für den Titel */
+  animation: fadeInDown 1.5s ease-in-out;
+  /* Animation für den Titel */
   color: #a29074;
 }
 
 /* Untertitel im Hero-Banner */
 .hero-subtitle {
   font-size: 1.5rem;
-  animation: fadeInUp 1.5s ease-in-out; /* Animation für den Untertitel */
+  animation: fadeInUp 1.5s ease-in-out;
+  /* Animation für den Untertitel */
 }
 
 /* Scroll-Pfeil */
@@ -127,6 +151,7 @@ header {
   color: white;
   animation: bounce 2s infinite;
 }
+
 .bg-dark-transparent {
   background-color: rgba(0, 0, 0, 0.6) !important;
 }
@@ -138,6 +163,7 @@ header {
     opacity: 0;
     transform: translateY(-50px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -149,6 +175,7 @@ header {
     opacity: 0;
     transform: translateY(50px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -156,6 +183,7 @@ header {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -163,9 +191,11 @@ header {
   100% {
     transform: translateX(-50%) translateY(0);
   }
+
   40% {
     transform: translateX(-50%) translateY(-20px);
   }
+
   60% {
     transform: translateX(-50%) translateY(-10px);
   }
@@ -196,6 +226,15 @@ header {
 }
 
 /* Services */
+.service-btn {
+  background-color: #a29074;
+  border-color: #a29074;
+  color: #ffffff;
+}
+.modal[aria-hidden="true"] {
+  pointer-events: none;
+}
+
 #services {
   background-color: #fff;
   padding: 60px 0;
@@ -245,16 +284,23 @@ header {
 /* Special Event mit Parallax-Effekt */
 #special-event {
   position: relative;
-  height: 600px; /* Höhe der Sektion */
-  background-image: url("img/event-background.jpg"); /* Hintergrundbild */
-  background-size: cover; /* Bild deckt den gesamten Bereich ab */
-  background-position: center; /* Bild wird zentriert */
-  background-attachment: fixed; /* Hintergrundbild bleibt fixiert */
+  height: 600px;
+  /* Höhe der Sektion */
+  background-image: url("img/event-background.jpg");
+  /* Hintergrundbild */
+  background-size: cover;
+  /* Bild deckt den gesamten Bereich ab */
+  background-position: center;
+  /* Bild wird zentriert */
+  background-attachment: fixed;
+  /* Hintergrundbild bleibt fixiert */
   display: flex;
   align-items: center;
-  justify-content: center; /* Horizontal zentrieren */
+  justify-content: center;
+  /* Horizontal zentrieren */
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Schatten für bessere Lesbarkeit */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Schatten für bessere Lesbarkeit */
 }
 
 /* Overlay für bessere Lesbarkeit des Textes */
@@ -265,18 +311,21 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dunkles Overlay */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dunkles Overlay */
 }
 
 /* Inhalt der Event-Sektion */
 #special-event .container {
   position: relative;
   z-index: 1;
-  height: 100%; /* Container nimmt die volle Höhe ein */
+  height: 100%;
+  /* Container nimmt die volle Höhe ein */
 }
 
 #special-event .row {
-  height: 100%; /* Row nimmt die volle Höhe ein */
+  height: 100%;
+  /* Row nimmt die volle Höhe ein */
 }
 
 #special-event h2 {
@@ -294,13 +343,19 @@ header {
 #special-event img {
   max-width: 100%;
   height: auto;
-  border: 5px solid white; /* Rahmen um das Party-Bild */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten für das Bild */
+  border: 5px solid white;
+  /* Rahmen um das Party-Bild */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Schatten für das Bild */
 }
+
 .carousel-item img {
-  height: 500px; /* Höhe für alle Bilder festlegen */
-  object-fit: cover; /* Bilder werden beschnitten, aber behalten ihr Seitenverhältnis */
+  height: 500px;
+  /* Höhe für alle Bilder festlegen */
+  object-fit: cover;
+  /* Bilder werden beschnitten, aber behalten ihr Seitenverhältnis */
 }
+
 /* Hintergrundbild und Overlay */
 #menu-reservation {
   background: url("img/restaurant-bg.jpg") no-repeat center center/cover;
@@ -313,7 +368,8 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Dunkler Overlay für bessere Lesbarkeit */
+  background: rgba(0, 0, 0, 0.6);
+  /* Dunkler Overlay für bessere Lesbarkeit */
 }
 
 #menu-reservation .container {
@@ -327,6 +383,7 @@ header {
   overflow: hidden;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 /* Google Maps Container */
 .map-container {
   border-radius: 10px;
@@ -345,9 +402,11 @@ header {
 .social-icon:hover {
   color: #a29074;
 }
+
 /* WhatsApp Button */
 .btn-whatsapp {
-  background-color: #25d366; /* Offizielle WhatsApp-Farbe */
+  background-color: #25d366;
+  /* Offizielle WhatsApp-Farbe */
   color: white;
   font-weight: bold;
 }
@@ -356,6 +415,7 @@ header {
   background-color: #1ebe57;
   color: white;
 }
+
 /* Footer */
 footer {
   background-color: #111;
@@ -386,6 +446,7 @@ footer {
 .social-icon:hover {
   color: #a29074;
 }
+
 /* Scroll-to-Top Button */
 .scroll-to-top {
   position: fixed;
@@ -416,6 +477,7 @@ footer {
   visibility: visible;
   transform: translateY(0);
 }
+
 .scroll-animation {
   opacity: 0;
   transform: translateY(30px);
@@ -426,6 +488,7 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
 .btn {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -434,6 +497,7 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -442,6 +506,7 @@ footer {
   transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 /* Cookie-Banner */
 .cookie-banner {
   position: fixed;
@@ -474,24 +539,26 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2rem; /* Kleinere Schriftgröße für mobile Geräte */
+    font-size: 2rem;
+    /* Kleinere Schriftgröße für mobile Geräte */
   }
 
   .hero-subtitle {
-    font-size: 1.2rem; /* Kleinere Schriftgröße für mobile Geräte */
+    font-size: 1.2rem;
+    /* Kleinere Schriftgröße für mobile Geräte */
   }
 
   .navbar-nav {
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.9
-    ); /* Dunkler Hintergrund für mobile Navbar */
+    background-color: rgba(0,
+        0,
+        0,
+        0.9);
+    /* Dunkler Hintergrund für mobile Navbar */
     padding: 10px;
   }
 
   .navbar-nav .nav-link {
-    text-align: center; /* Zentrierte Links für mobile Geräte */
+    text-align: center;
+    /* Zentrierte Links für mobile Geräte */
   }
 }
