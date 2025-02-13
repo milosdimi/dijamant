@@ -88,3 +88,13 @@ function jumpToSlide(carouselId, slideIndex) {
   var bsCarousel = new bootstrap.Carousel(carousel);
   bsCarousel.to(slideIndex);
 }
+
+
+function changeImage(imageSrc) {
+  const mainImage = document.getElementById("mainImage");
+  mainImage.style.opacity = "0"; // Blendet Bild kurz aus für den Effekt
+  setTimeout(() => {
+    mainImage.src = imageSrc;
+    mainImage.style.opacity = "1"; // Blendet Bild wieder ein
+  }, 300);
+}
